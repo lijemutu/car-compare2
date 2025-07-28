@@ -6,6 +6,8 @@ namespace CarCompare.Models
 {
     public class CarModel
     {
+        public int Id { get; set; }
+
         [JsonPropertyName("make")]
         [Required]
         public string? Make { get; set; }
@@ -19,7 +21,7 @@ namespace CarCompare.Models
         public int Year { get; set; }
 
         [JsonPropertyName("price_mxn")]
-        public string? PriceMxn { get; set; }
+        public string PriceMxn { get; set; }
 
         [JsonPropertyName("engine_specs")]
         public EngineSpecs? EngineSpecs { get; set; }

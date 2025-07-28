@@ -1,0 +1,10 @@
+@model CarCompare.Models.CompareModel
+
+@{    ViewData["Title"] = "Compare Cars";
+}
+
+<h1>Compare Cars</h1>
+
+<div id="compare-table">
+    @await Html.PartialAsync("_Compare", Model)
+</div>

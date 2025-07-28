@@ -18,7 +18,12 @@ namespace CarCompare.Services
             try
             {
                 var json = await File.ReadAllTextAsync(_jsonPath);
-                return JsonSerializer.Deserialize<List<CarModel>>(json);
+                var cars = JsonSerializer.Deserialize<List<CarModel>>(json);
+                for (int i = 0; i < cars.Count; i++)
+                {
+                    cars[i].Id = i;
+                }
+                return cars;
             }
             catch (Exception ex)
             {

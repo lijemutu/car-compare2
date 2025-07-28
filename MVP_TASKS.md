@@ -22,6 +22,6 @@
 - [X] Add README with setup instructions.
 
 ## Stretch Goals (Optional)
-- [ ] Add comparison feature for selected cars.
-- [ ] Add sorting options (price, year, fuel efficiency).
-- [ ] Add responsive/mobile-friendly UI.
+- [X] Add comparison feature for selected cars.
+- [X] Add sorting options (price, year, fuel efficiency).
+- [X] Add responsive/mobile-friendly UI.

@@ -4,6 +4,12 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(30);
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
 // Register CarDataService and CarRepository
 var carsJsonPath = Path.Combine(AppContext.BaseDirectory,"cars2025.json");
 builder.Services.AddSingleton<CarCompare.Services.CarDataService>(_ => new CarCompare.Services.CarDataService(carsJsonPath));
@@ -25,6 +31,7 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseSession();
 app.UseRouting();
 
 app.UseAuthorization();
@@ -43,10 +50,11 @@ app.MapGet("/api/cars", (CarCompare.Services.CarRepository repo) =>
             .Append($"<td>{car.Make}</td>")
             .Append($"<td>{car.Model}</td>")
             .Append($"<td>{car.Year}</td>")
-            .Append($"<td>{car.PriceMxn}</td>")
+            .Append($"<td>{car.PriceMxn:C0}</td>") // Format as currency
             .Append($"<td>{car.EngineSpecs?.Type ?? "-"}</td>")
             .Append($"<td>{car.FuelEfficiencyKml?.Combined ?? "-"}</td>")
             .Append($"<td>{(car.SafetyFeatures != null ? string.Join(", ", car.SafetyFeatures) : "-")}</td>")
+            .Append($"<td><button class=\"add-to-compare px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500\" data-car-id=\"{car.Id}\">Add to Compare</button></td>")
             .Append("</tr>")
         ;
     }
@@ -54,9 +62,9 @@ app.MapGet("/api/cars", (CarCompare.Services.CarRepository repo) =>
     return Results.Content(html, "text/html");
 });
 
-app.MapGet("/api/cars/filter", (string? make, string? model, decimal? minPrice, decimal? maxPrice, CarCompare.Services.CarRepository repo) =>
+app.MapGet("/api/cars/filter", (string? make, string? model, decimal? minPrice, decimal? maxPrice, string? sortBy, CarCompare.Services.CarRepository repo) =>
 {
-    var cars = repo.Filter(make, model, minPrice, maxPrice);
+    var cars = repo.Filter(make, model, minPrice, maxPrice, sortBy);
     var sb = new StringBuilder();
     foreach (var car in cars)
     {
@@ -64,28 +72,14 @@ app.MapGet("/api/cars/filter", (string? make, string? model, decimal? minPrice, 
             .Append($"<td>{car.Make}</td>")
             .Append($"<td>{car.Model}</td>")
             .Append($"<td>{car.Year}</td>")
-            .Append($"<td>{car.PriceMxn}</td>")
+            .Append($"<td>{car.PriceMxn:C0}</td>") // Format as currency
             .Append($"<td>{car.EngineSpecs?.Type ?? "-"}</td>")
             .Append($"<td>{car.FuelEfficiencyKml?.Combined ?? "-"}</td>")
             .Append($"<td>{(car.SafetyFeatures != null ? string.Join(", ", car.SafetyFeatures) : "-")}</td>")
+            .Append($"<td><button class=\"add-to-compare px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500\" data-car-id=\"{car.Id}\">Add to Compare</button></td>")
             .Append("</tr>");
     }
     var html = sb.ToString();
-    return Results.Content(html, "text/html");
-});
-
-app.MapGet("/api/cars/filter", (string? make, string? model, decimal? minPrice, decimal? maxPrice, CarCompare.Services.CarRepository repo) =>
-{
-    var cars = repo.Filter(make, model, minPrice, maxPrice);
-    var html = string.Join("\n", cars.Select(car => $"<tr>"
-        + $"<td>{car.Make}</td>"
-        + $"<td>{car.Model}</td>"
-        + $"<td>{car.Year}</td>"
-        + $"<td>{car.PriceMxn}</td>"
-        + $"<td>{car.EngineSpecs?.Type ?? "-"}</td>"
-        + $"<td>{car.FuelEfficiencyKml?.Combined ?? "-"}</td>"
-        + $"<td>{(car.SafetyFeatures != null ? string.Join(", ", car.SafetyFeatures) : "-")}</td>"
-        + "</tr>"));
     return Results.Content(html, "text/html");
 });
 

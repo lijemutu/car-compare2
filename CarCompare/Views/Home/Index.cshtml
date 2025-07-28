@@ -7,50 +7,85 @@
     ViewData["Title"] = "Car List";
 }
 
-<h1>New Cars Mexico 2025</h1>
+<h1 class="text-3xl font-bold text-gray-800 mb-6">New Cars Mexico 2025</h1>
 
-<div id="car-filters">
-    <form id="filter-form" hx-get="/api/cars/filter" hx-target="#car-list" hx-trigger="change, keyup delay:300ms">
-        <label>Make:
-            <input type="text" name="make" />
+<div id="car-filters" class="bg-white shadow-md rounded-lg p-6 mb-8">
+    <form id="filter-form" hx-get="/api/cars/filter" hx-target="#car-list" hx-trigger="change, keyup delay:300ms" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <label class="block">
+            <span class="text-gray-700">Make:</span>
+            <input type="text" name="make" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" />
         </label>
-        <label>Model:
-            <input type="text" name="model" />
+        <label class="block">
+            <span class="text-gray-700">Model:</span>
+            <input type="text" name="model" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" />
         </label>
-        <label>Min Price:
-            <input type="number" name="minPrice" step="0.01" />
+        <label class="block">
+            <span class="text-gray-700">Min Price:</span>
+            <input type="number" name="minPrice" step="0.01" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" />
         </label>
-        <label>Max Price:
-            <input type="number" name="maxPrice" step="0.01" />
+        <label class="block">
+            <span class="text-gray-700">Max Price:</span>
+            <input type="number" name="maxPrice" step="0.01" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" />
+        </label>
+        <label class="block">
+            <span class="text-gray-700">Sort by:</span>
+            <select name="sortBy" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                <option value="">None</option>
+                <option value="price">Price</option>
+                <option value="year">Year</option>
+                <option value="fuel_efficiency">Fuel Efficiency</option>
+            </select>
         </label>
         <!-- Add more filters as needed -->
     </form>
 </div>
 
-<div id="car-list" hx-get="/api/cars" hx-trigger="load">
-    <div class="table-responsive">
-        <table class="table table-striped table-hover" id="cars-table">
+<div id="car-list" hx-get="/api/cars" hx-trigger="load" class="bg-white shadow-md rounded-lg overflow-hidden">
+    <div class="overflow-x-auto">
+        <table class="min-w-full leading-normal" id="cars-table">
             <thead>
                 <tr>
-                    <th>Marca</th>
-                    <th>Modelo</th>
-                    <th>Año</th>
-                    <th>Precio</th>
-                    <th>Motor</th>
-                    <th>Eficiencia</th>
-                    <th>Seguridad</th>
+                    <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Marca</th>
+                    <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Modelo</th>
+                    <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Año</th>
+                    <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Precio</th>
+                    <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Motor</th>
+                    <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Eficiencia</th>
+                    <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">Seguridad</th>
+                    <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100"></th>
                 </tr>
             </thead>
-            <tbody id="cars-tbody">
+            <tbody id="cars-tbody" class="divide-y divide-gray-200">
                 <!-- Car rows will be loaded here by HTMX -->
             </tbody>
         </table>
     </div>
-    <div class="d-flex justify-content-between align-items-center mt-3">
-        <button class="btn btn-outline-primary" id="prev-page" hx-get="/api/cars/filter?page=prev" hx-target="#car-list" hx-swap="outerHTML">Anterior</button>
-        <span id="page-info">Página <span id="current-page">1</span></span>
-        <button class="btn btn-outline-primary" id="next-page" hx-get="/api/cars/filter?page=next" hx-target="#car-list" hx-swap="outerHTML">Siguiente</button>
+    <div class="px-5 py-5 bg-white border-t flex flex-col xs:flex-row items-center xs:justify-between">
+        <button class="px-4 py-2 text-sm font-medium text-white bg-indigo-600 rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" id="prev-page" hx-get="/api/cars/filter?page=prev" hx-target="#car-list" hx-swap="outerHTML">Anterior</button>
+        <span id="page-info" class="text-sm text-gray-700">Página <span id="current-page" class="font-semibold">1</span></span>
+        <button class="px-4 py-2 text-sm font-medium text-white bg-indigo-600 rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" id="next-page" hx-get="/api/cars/filter?page=next" hx-target="#car-list" hx-swap="outerHTML">Siguiente</button>
     </div>
 </div>
 
+<div id="compare-section" class="mt-8 bg-white shadow-md rounded-lg p-6">
+    <h2 class="text-2xl font-bold text-gray-800 mb-4">Compare Cars</h2>
+    <div id="compare-table-container"></div>
+    <a href="/compare" class="mt-4 inline-block px-6 py-2 text-sm font-medium text-white bg-green-600 rounded-md hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">Go to Compare Page</a>
+</div>
+
 <script src="https://unpkg.com/htmx.org@1.9.2"></script>
+<script>
+  // Get the form element
+  const filterForm = document.getElementById('filter-form');
+
+  // Listen for the htmx:configRequest event on the form
+  filterForm.addEventListener('htmx:configRequest', function(event) {
+    // Loop through the parameters that HTMX is about to send
+    for (const key in event.detail.parameters) {
+      // If a parameter has an empty value, delete it
+      if (event.detail.parameters[key] === '') {
+        delete event.detail.parameters[key];
+      }
+    }
+  });
+</script>
