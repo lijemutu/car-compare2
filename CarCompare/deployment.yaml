@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: carcompare-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: carcompare
+  template:
+    metadata:
+      labels:
+        app: carcompare
+    spec:
+      containers:
+      - name: carcompare
+        image: erloto/carcompare:latest
+        imagePullPolicy: Never  
+        ports:
+        - containerPort: 8080

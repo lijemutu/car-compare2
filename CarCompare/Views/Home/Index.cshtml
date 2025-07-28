@@ -1,0 +1,56 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+@{
+    ViewData["Title"] = "Car List";
+}
+
+<h1>New Cars Mexico 2025</h1>
+
+<div id="car-filters">
+    <form id="filter-form" hx-get="/api/cars/filter" hx-target="#car-list" hx-trigger="change, keyup delay:300ms">
+        <label>Make:
+            <input type="text" name="make" />
+        </label>
+        <label>Model:
+            <input type="text" name="model" />
+        </label>
+        <label>Min Price:
+            <input type="number" name="minPrice" step="0.01" />
+        </label>
+        <label>Max Price:
+            <input type="number" name="maxPrice" step="0.01" />
+        </label>
+        <!-- Add more filters as needed -->
+    </form>
+</div>
+
+<div id="car-list" hx-get="/api/cars" hx-trigger="load">
+    <div class="table-responsive">
+        <table class="table table-striped table-hover" id="cars-table">
+            <thead>
+                <tr>
+                    <th>Marca</th>
+                    <th>Modelo</th>
+                    <th>Año</th>
+                    <th>Precio</th>
+                    <th>Motor</th>
+                    <th>Eficiencia</th>
+                    <th>Seguridad</th>
+                </tr>
+            </thead>
+            <tbody id="cars-tbody">
+                <!-- Car rows will be loaded here by HTMX -->
+            </tbody>
+        </table>
+    </div>
+    <div class="d-flex justify-content-between align-items-center mt-3">
+        <button class="btn btn-outline-primary" id="prev-page" hx-get="/api/cars/filter?page=prev" hx-target="#car-list" hx-swap="outerHTML">Anterior</button>
+        <span id="page-info">Página <span id="current-page">1</span></span>
+        <button class="btn btn-outline-primary" id="next-page" hx-get="/api/cars/filter?page=next" hx-target="#car-list" hx-swap="outerHTML">Siguiente</button>
+    </div>
+</div>
+
+<script src="https://unpkg.com/htmx.org@1.9.2"></script>

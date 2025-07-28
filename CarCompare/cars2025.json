@@ -1,0 +1,659 @@
+[
+    {
+        "make": "Nissan",
+        "model": "Magnite",
+        "year": 2025,
+        "price_mxn": "Desde $292,900",
+        "engine_specs": {
+            "type": "1.0L Turbo (3 cilindros)",
+            "horsepower_hp": 99,
+            "torque_lbft": 118
+        },
+        "fuel_efficiency_kml": {
+            "combined": "Aproximadamente 16 km/l (en ciudad, según reseña mexicana)",
+            "city": "Aproximadamente 16 km/l (según reseña mexicana)",
+            "highway": "No especificado"
+        },
+        "safety_features": [
+            "6 bolsas de aire",
+            "Control Dinámico Vehicular (VDC)",
+            "Sistema de Frenos Antibloqueo (ABS)",
+            "Distribución Electrónica de Frenado (EBD)",
+            "Asistencia de Frenado (BA)",
+            "Sistema de Monitoreo de Presión de Neumáticos (TPMS)",
+            "Cámara de Visión Periférica 360° (AVM)"
+        ]
+    },
+    {
+        "make": "Chevrolet",
+        "model": "Aveo Sedán",
+        "year": 2025,
+        "price_mxn": "Desde $270,400",
+        "engine_specs": {
+            "type": "1.5L (4 cilindros)",
+            "horsepower_hp": 98,
+            "torque_lbft": 105
+        },
+        "fuel_efficiency_kml": {
+            "city": 16.9,
+            "highway": 27.3,
+            "combined": 20.4
+        },
+        "safety_features": [
+            "6 bolsas de aire",
+            "Frenos ABS",
+            "Control de Estabilidad StabiliTrak",
+            "Anclajes ISOFIX para sillas de niños"
+        ]
+    },
+    {
+        "make": "Chevrolet",
+        "model": "Onix",
+        "year": 2025,
+        "price_mxn": "Desde $341,900",
+        "engine_specs": {
+            "type": "1.3L (4 cilindros) o 1.0L Turbo (3 cilindros)",
+            "horsepower_hp": "101 (1.3L) / 116 (1.0L Turbo)",
+            "torque_lbft": "96 (1.3L) / 129 (1.0L Turbo)"
+        },
+        "fuel_efficiency_kml": {
+            "combined": "Aproximadamente 19.3 km/l (1.0L Turbo)",
+            "city": "Aproximadamente 17.5 km/l (1.0L Turbo)",
+            "highway": "Aproximadamente 22.0 km/l (1.0L Turbo)"
+        },
+        "safety_features": [
+            "6 bolsas de aire",
+            "Frenos ABS",
+            "Control de Estabilidad StabiliTrak"
+        ]
+    },
+    {
+        "make": "Chevrolet",
+        "model": "Tracker",
+        "year": 2025,
+        "price_mxn": "Desde $419,900",
+        "engine_specs": {
+            "type": "1.2L Turbo (3 cilindros)",
+            "horsepower_hp": 130
+        },
+        "fuel_efficiency_kml": {
+            "combined": "Aproximadamente 16.2 km/l",
+            "city": "Aproximadamente 14.5 km/l",
+            "highway": "Aproximadamente 19.0 km/l"
+        },
+        "safety_features": [
+            "6 bolsas de aire",
+            "Frenos ABS",
+            "Control de Tracción (TCS)",
+            "Control de Estabilidad StabiliTrak",
+            "Asistencia de Arranque en Pendiente (HAC)",
+            "Alerta de colisión frontal (versiones Premier)",
+            "Frenado de emergencia automático (versiones Premier)",
+            "Asistente de estacionamiento (versiones Premier)"
+        ]
+    },
+    {
+        "make": "Chevrolet",
+        "model": "Captiva",
+        "year": 2025,
+        "price_mxn": "Desde $487,400",
+        "engine_specs": {
+            "type": "1.5L Turbo",
+            "horsepower_hp": 147,
+            "torque_nm": 244
+        },
+        "fuel_efficiency_kml": {
+            "city": 14.2,
+            "highway": 19.7,
+            "combined": 16.5
+        },
+        "safety_features": [
+            "6 bolsas de aire",
+            "Frenos ABS",
+            "Cámara de reversa",
+            "Cámara de 360°"
+        ]
+    },
+    {
+        "make": "Chevrolet",
+        "model": "Silverado",
+        "year": 2025,
+        "price_mxn": "Desde $847,900",
+        "engine_specs": {
+            "type": "V8 5.3L o 2.7L Turbo (4 cilindros)",
+            "horsepower_hp": "355 (5.3L) / 310 (2.7L Turbo)",
+            "torque_lbft": "383 (5.3L) / 430 (2.7L Turbo)"
+        },
+        "fuel_efficiency_kml": {
+            "combined": "No especificado para México",
+            "city": "No especificado para México",
+            "highway": "No especificado para México"
+        },
+        "safety_features": [
+            "6 bolsas de aire",
+            "Frenos ABS",
+            "Control de Estabilidad StabiliTrak",
+            "Asistente de arranque en pendientes",
+            "Alerta de cambio de carril (en algunas versiones)",
+            "Alerta de colisión frontal (en algunas versiones)"
+        ]
+    },
+    {
+        "make": "Volkswagen",
+        "model": "Tiguan",
+        "year": 2025,
+        "price_mxn": "Desde $506,990",
+        "engine_specs": {
+            "type": "1.4L TSI Turbo (4 cilindros)",
+            "horsepower_hp": 150,
+            "torque_lbft": 184
+        },
+        "fuel_efficiency_kml": {
+            "city": 13.6,
+            "highway": 18.0,
+            "combined": 15.3
+        },
+        "safety_features": [
+            "6 bolsas de aire",
+            "ABS (Sistema de Frenos Antibloqueo)",
+            "EBD (Distribución Electrónica de Frenado)",
+            "BA (Asistencia de Frenado)",
+            "Control de Crucero Adaptativo (ACC)",
+            "Monitor de Punto Ciego (BSM)",
+            "Alerta de colisión frontal (FCW)"
+        ]
+    },
+    {
+        "make": "Volkswagen",
+        "model": "Jetta",
+        "year": 2025,
+        "price_mxn": "Desde $399,990",
+        "engine_specs": {
+            "type": "1.4L TSI Turbo (4 cilindros)",
+            "horsepower_hp": 150,
+            "torque_lbft": 184
+        },
+        "fuel_efficiency_kml": {
+            "city": 16.0,
+            "highway": 23.6,
+            "combined": 18.8
+        },
+        "safety_features": [
+            "6 bolsas de aire",
+            "ABS (Sistema de Frenos Antibloqueo)",
+            "EBD (Distribución Electrónica de Frenado)",
+            "BA (Asistencia de Frenado)",
+            "Alerta de colisión frontal (FCW)",
+            "Alerta de fatiga",
+            "Asistente de arranque en pendientes (HAC)"
+        ]
+    },
+    {
+        "make": "Volkswagen",
+        "model": "Virtus",
+        "year": 2025,
+        "price_mxn": "Desde $320,990",
+        "engine_specs": {
+            "type": "1.6L MSI (4 cilindros) o 1.0L TSI Turbo (3 cilindros)",
+            "horsepower_hp": "110 (1.6L) / 114 (1.0L Turbo)",
+            "torque_lbft": "114 (1.6L)"
+        },
+        "fuel_efficiency_kml": {
+            "city": "15.0 (1.6L)",
+            "highway": "20.0 (1.6L)",
+            "combined": "17.0 (1.6L)"
+        },
+        "safety_features": [
+            "4 bolsas de aire",
+            "ABS (Sistema de Frenos Antibloqueo)",
+            "EBD (Distribución Electrónica de Frenado)",
+            "Asistente de arranque en pendientes (HAC)",
+            "Sistema de Monitoreo de Presión de Neumáticos (TPMS)"
+        ]
+    },
+    {
+        "make": "Volkswagen",
+        "model": "Taigun",
+        "year": 2025,
+        "price_mxn": "Desde $379,990",
+        "engine_specs": {
+            "type": "1.0L TSI Turbo (3 cilindros)",
+            "horsepower_hp": 114,
+            "torque_lbft": 131
+        },
+        "fuel_efficiency_kml": {
+            "city": 14.9,
+            "highway": 20.5,
+            "combined": 17.0
+        },
+        "safety_features": [
+            "6 bolsas de aire",
+            "ABS (Sistema de Frenos Antibloqueo)",
+            "EBD (Distribución Electrónica de Frenado)",
+            "BA (Asistencia de Frenado)",
+            "Asistente de arranque en pendientes (HAC)",
+            "Sistema de Monitoreo de Presión de Neumáticos (TPMS)"
+        ]
+    },
+    {
+        "make": "KIA",
+        "model": "K3 Sedán",
+        "year": 2025,
+        "price_mxn": "Desde $316,900",
+        "engine_specs": {
+            "type": "1.6L MPI (4 cilindros) o 2.0L MPI (4 cilindros)",
+            "horsepower_hp": "121 (1.6L) / 150 (2.0L)",
+            "torque_lbft": "111 (1.6L) / 141 (2.0L)"
+        },
+        "fuel_efficiency_kml": {
+            "combined": "17.0 (1.6L, según KIA México)",
+            "city": "No especificado (1.6L)",
+            "highway": "No especificado (1.6L)"
+        },
+        "safety_features": [
+            "6 bolsas de aire",
+            "ABS",
+            "Control Electrónico de Estabilidad (ESC)",
+            "Asistente de Arranque en Pendiente (HAC)",
+            "Sistema de Gestión de Estabilidad del Vehículo (VSM)"
+        ]
+    },
+    {
+        "make": "KIA",
+        "model": "Sonet",
+        "year": 2025,
+        "price_mxn": "Desde $333,900",
+        "engine_specs": {
+            "type": "1.5L MPI (4 cilindros)",
+            "horsepower_hp": 113,
+            "torque_lbft": 106
+        },
+        "fuel_efficiency_kml": {
+            "combined": "18.3 (según KIA México)",
+            "city": "No especificado",
+            "highway": "No especificado"
+        },
+        "safety_features": [
+            "6 bolsas de aire",
+            "ABS",
+            "Control Electrónico de Estabilidad (ESC)",
+            "Asistente de Arranque en Pendiente (HAC)"
+        ]
+    },
+    {
+        "make": "KIA",
+        "model": "Seltos",
+        "year": 2025,
+        "price_mxn": "Desde $448,900",
+        "engine_specs": {
+            "type": "1.5L MPI (4 cilindros) o 1.4L T-GDI (4 cilindros)",
+            "horsepower_hp": "113 (1.5L) / 138 (1.4L T-GDI)",
+            "torque_lbft": "106 (1.5L) / 179 (1.4L T-GDI)"
+        },
+        "fuel_efficiency_kml": {
+            "combined": "16.8 (1.5L, según KIA México)",
+            "city": "No especificado",
+            "highway": "No especificado"
+        },
+        "safety_features": [
+            "6 bolsas de aire",
+            "ABS",
+            "Control Electrónico de Estabilidad (ESC)",
+            "Asistente de Arranque en Pendiente (HAC)",
+            "Asistencia Avanzada de Conducción (ADAS) en versiones superiores"
+        ]
+    },
+    {
+        "make": "KIA",
+        "model": "Sportage",
+        "year": 2026,
+        "price_mxn": "Desde $552,900",
+        "engine_specs": {
+            "type": "2.5L GDI (4 cilindros)",
+            "horsepower_hp": 187,
+            "torque_lbft": 178
+        },
+        "fuel_efficiency_kml": {
+            "combined": "15.0 (según KIA México)",
+            "city": "No especificado",
+            "highway": "No especificado"
+        },
+        "safety_features": [
+            "6 bolsas de aire",
+            "ABS",
+            "Control Electrónico de Estabilidad (ESC)",
+            "Asistente de Arranque en Pendiente (HAC)",
+            "Asistencia Avanzada de Conducción (ADAS) en versiones superiores"
+        ]
+    },
+    {
+        "make": "Toyota",
+        "model": "Yaris Hatchback",
+        "year": 2025,
+        "price_mxn": "Desde $297,500",
+        "engine_specs": {
+            "type": "1.5L (4 cilindros)",
+            "horsepower_hp": 105,
+            "torque_lbft": 102
+        },
+        "fuel_efficiency_kml": {
+            "city": 16.6,
+            "highway": 21.0,
+            "combined": 18.2
+        },
+        "safety_features": [
+            "6 bolsas de aire",
+            "ABS",
+            "Control de Estabilidad (VSC)",
+            "Control de Tracción (TRAC)",
+            "Asistencia de Frenado (BA)",
+            "Distribución Electrónica de Frenado (EBD)"
+        ]
+    },
+    {
+        "make": "Toyota",
+        "model": "Yaris Sedán",
+        "year": 2025,
+        "price_mxn": "Desde $299,800",
+        "engine_specs": {
+            "type": "1.5L (4 cilindros)",
+            "horsepower_hp": 105,
+            "torque_lbft": 102
+        },
+        "fuel_efficiency_kml": {
+            "city": 16.6,
+            "highway": 21.0,
+            "combined": 18.2
+        },
+        "safety_features": [
+            "6 bolsas de aire",
+            "ABS",
+            "Control de Estabilidad (VSC)",
+            "Control de Tracción (TRAC)",
+            "Asistencia de Frenado (BA)",
+            "Distribución Electrónica de Frenado (EBD)"
+        ]
+    },
+    {
+        "make": "Toyota",
+        "model": "Corolla",
+        "year": 2025,
+        "price_mxn": "Desde $379,900",
+        "engine_specs": {
+            "type": "1.8L (4 cilindros) o 2.0L (4 cilindros)",
+            "horsepower_hp": "139 (1.8L) / 169 (2.0L)",
+            "torque_lbft": "126 (1.8L) / 151 (2.0L)"
+        },
+        "fuel_efficiency_kml": {
+            "combined": "16.1 (1.8L), 17.6 (2.0L)",
+            "city": "No especificado",
+            "highway": "No especificado"
+        },
+        "safety_features": [
+            "8 bolsas de aire",
+            "Toyota Safety Sense 3.0 (TSS 3.0)",
+            "ABS",
+            "VSC",
+            "TRAC",
+            "BA",
+            "EBD",
+            "Sistema de Monitoreo de Presión de Neumáticos (TPMS)"
+        ]
+    },
+    {
+        "make": "Toyota",
+        "model": "Prius HEV",
+        "year": 2025,
+        "price_mxn": "Desde $498,900",
+        "engine_specs": {
+            "type": "2.0L Híbrido (4 cilindros)",
+            "horsepower_hp": 194,
+            "torque_lbft": 139
+        },
+        "fuel_efficiency_kml": {
+            "combined": 28.0,
+            "city": "28.5 (convertido de 67 MPG US)",
+            "highway": "27.2 (convertido de 64 MPG US)"
+        },
+        "safety_features": [
+            "8 bolsas de aire",
+            "Toyota Safety Sense 3.0 (TSS 3.0)",
+            "ABS",
+            "VSC",
+            "TRAC",
+            "BA",
+            "EBD",
+            "TPMS"
+        ]
+    },
+    {
+        "make": "Toyota",
+        "model": "Corolla Cross",
+        "year": 2025,
+        "price_mxn": "Desde $464,900",
+        "engine_specs": {
+            "type": "2.0L (4 cilindros)",
+            "horsepower_hp": 169,
+            "torque_lbft": 150
+        },
+        "fuel_efficiency_kml": {
+            "combined": 16.2,
+            "city": "No especificado",
+            "highway": "No especificado"
+        },
+        "safety_features": [
+            "8 bolsas de aire",
+            "Toyota Safety Sense 3.0 (TSS 3.0)",
+            "ABS",
+            "VSC",
+            "TRAC",
+            "BA",
+            "EBD",
+            "TPMS"
+        ]
+    },
+    {
+        "make": "Toyota",
+        "model": "RAV4",
+        "year": 2025,
+        "price_mxn": "Desde $549,900",
+        "engine_specs": {
+            "type": "2.5L (4 cilindros)",
+            "horsepower_hp": 204,
+            "torque_lbft": 179
+        },
+        "fuel_efficiency_kml": {
+            "combined": 15.5,
+            "city": "No especificado",
+            "highway": "No especificado"
+        },
+        "safety_features": [
+            "8 bolsas de aire",
+            "Toyota Safety Sense 2.5 (TSS 2.5)",
+            "ABS",
+            "VSC",
+            "TRAC",
+            "BA",
+            "EBD",
+            "TPMS"
+        ]
+    },
+    {
+        "make": "Toyota",
+        "model": "RAV4 HEV",
+        "year": 2025,
+        "price_mxn": "Desde $654,900",
+        "engine_specs": {
+            "type": "2.5L Híbrido (4 cilindros)",
+            "horsepower_hp": 219,
+            "torque_lbft": 163
+        },
+        "fuel_efficiency_kml": {
+            "combined": 20.9,
+            "city": "No especificado (40 MPG US)",
+            "highway": "No especificado (38 MPG US)"
+        },
+        "safety_features": [
+            "8 bolsas de aire",
+            "Toyota Safety Sense 2.5 (TSS 2.5)",
+            "ABS",
+            "VSC",
+            "TRAC",
+            "BA",
+            "EBD",
+            "TPMS"
+        ]
+    },
+    {
+        "make": "Toyota",
+        "model": "Highlander HEV",
+        "year": 2025,
+        "price_mxn": "Desde $849,900",
+        "engine_specs": {
+            "type": "2.5L Híbrido (4 cilindros)",
+            "horsepower_hp": 243,
+            "torque_lbft": "175 (motor de gasolina)"
+        },
+        "fuel_efficiency_kml": {
+            "combined": 17.5,
+            "city": "No especificado (36 MPG US)",
+            "highway": "No especificado (35 MPG US)"
+        },
+        "safety_features": [
+            "8 bolsas de aire",
+            "Toyota Safety Sense 2.5+ (TSS 2.5+)",
+            "ABS",
+            "VSC",
+            "TRAC",
+            "BA",
+            "EBD",
+            "TPMS"
+        ]
+    },
+    {
+        "make": "Toyota",
+        "model": "Sienna HEV",
+        "year": 2025,
+        "price_mxn": "Desde $778,900",
+        "engine_specs": {
+            "type": "2.5L Híbrido (4 cilindros)",
+            "horsepower_hp": 245,
+            "torque_lbft": "175 (motor de gasolina)"
+        },
+        "fuel_efficiency_kml": {
+            "combined": 18.0,
+            "city": "No especificado (36 MPG US)",
+            "highway": "No especificado (36 MPG US)"
+        },
+        "safety_features": [
+            "10 bolsas de aire",
+            "Toyota Safety Sense 2.0 (TSS 2.0)",
+            "ABS",
+            "VSC",
+            "TRAC",
+            "BA",
+            "EBD",
+            "TPMS"
+        ]
+    },
+    {
+        "make": "Toyota",
+        "model": "Tacoma",
+        "year": 2025,
+        "price_mxn": "Por definir (Lanzamiento 2025)",
+        "engine_specs": {
+            "type": "2.4L Turbo (4 cilindros) o 2.4L i-FORCE MAX Híbrido Turbo (4 cilindros)",
+            "horsepower_hp": "228 (2.4L) / 326 (i-FORCE MAX)",
+            "torque_lbft": "243 (2.4L) / 465 (i-FORCE MAX)"
+        },
+        "fuel_efficiency_kml": {
+            "city": "No especificado (estimado 10-12 km/l)",
+            "highway": "No especificado (estimado 13-15 km/l)",
+            "combined": "No especificado"
+        },
+        "safety_features": [
+            "Toyota Safety Sense 3.0 (TSS 3.0)",
+            "8 bolsas de aire",
+            "ABS",
+            "VSC",
+            "TRAC",
+            "BA",
+            "EBD",
+            "TPMS"
+        ]
+    },
+    {
+        "make": "Toyota",
+        "model": "Tundra HEV",
+        "year": 2025,
+        "price_mxn": "Desde $1,289,900",
+        "engine_specs": {
+            "type": "3.4L i-FORCE MAX Híbrido Twin-Turbo V6",
+            "horsepower_hp": 437,
+            "torque_lbft": 583
+        },
+        "fuel_efficiency_kml": {
+            "combined": 8.9,
+            "city": "No especificado (20 MPG US)",
+            "highway": "No especificado (24 MPG US)"
+        },
+        "safety_features": [
+            "8 bolsas de aire",
+            "Toyota Safety Sense 2.5 (TSS 2.5)",
+            "ABS",
+            "VSC",
+            "TRAC",
+            "BA",
+            "EBD",
+            "TPMS"
+        ]
+    },
+    {
+        "make": "Toyota",
+        "model": "GR Yaris",
+        "year": 2025,
+        "price_mxn": "Desde $799,900",
+        "engine_specs": {
+            "type": "1.6L Turbo (3 cilindros)",
+            "horsepower_hp": 300,
+            "torque_lbft": 295
+        },
+        "fuel_efficiency_kml": {
+            "combined": "No especificado (estimado 11-13 km/l)",
+            "city": "No especificado",
+            "highway": "No especificado"
+        },
+        "safety_features": [
+            "6 bolsas de aire",
+            "ABS",
+            "VSC",
+            "TRAC",
+            "BA",
+            "EBD"
+        ]
+    },
+    {
+        "make": "Toyota",
+        "model": "GR Supra",
+        "year": 2025,
+        "price_mxn": "Desde $1,199,900",
+        "engine_specs": {
+            "type": "3.0L Turbo (6 cilindros en línea)",
+            "horsepower_hp": 382,
+            "torque_lbft": 368
+        },
+        "fuel_efficiency_kml": {
+            "city": "No especificado (23 MPG US)",
+            "highway": "No especificado (31 MPG US)",
+            "combined": "No especificado (26 MPG US)"
+        },
+        "safety_features": [
+            "7 bolsas de aire",
+            "Frenos ABS de alto rendimiento",
+            "Control de estabilidad adaptativo",
+            "Monitoreo de punto ciego",
+            "Alerta de tráfico cruzado trasero",
+            "Sensores de estacionamiento"
+        ]
+    }
+]
